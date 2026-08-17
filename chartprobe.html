@@ -27,7 +27,7 @@ body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--body);
 p, .lede, .sec-head p, .result p, .card .desc, .card .claim, .dom p, .step p, .pipe-foot, .limit, .fig1 figcaption, .rt-cap, .probe{
   text-align:justify; text-justify:inter-word; hyphens:auto;
 }
-h1, h2, h3, h4, .eyebrow, .brand, .nav-links, .skills-line, .cite-head, .foot-meta, th, td, .chip, .gauge{
+h1, h2, h3, h4, .eyebrow, .brand, .nav-links, .skills-line, .authors, .affil, .cite-head, .foot-meta, th, td, .chip, .gauge{
   text-align:left;
 }
 .wrap{max-width:var(--maxw); margin:0 auto; padding:0 30px}
@@ -60,6 +60,10 @@ a{color:inherit}
   line-height:.86; letter-spacing:-.03em; margin:16px 0 12px}
 .skills-line{font-family:var(--disp); font-weight:600; font-size:clamp(16px,2.3vw,22px); margin:4px 0 24px; letter-spacing:-.01em}
 .skills-line b{color:var(--grnd); font-weight:700; padding:0 10px}
+.authors{font-size:17px; margin:0 0 6px; color:var(--ink); text-align:left}
+.authors a{color:var(--ink); text-decoration:underline; text-decoration-color:var(--rule-2); text-underline-offset:3px; transition:color .15s, text-decoration-color .15s}
+.authors a:hover{color:var(--perc); text-decoration-color:var(--perc)}
+.affil{font-size:14.5px; color:var(--muted); margin:0 0 24px}
 .lede{font-size:19px; max-width:34em; margin:0 0 30px; color:var(--muted)}
 .lede .k{color:var(--ink); font-weight:600; text-decoration:underline; text-decoration-color:var(--grnd); text-underline-offset:4px}
 .cta{display:flex; flex-wrap:wrap; gap:13px}
@@ -172,9 +176,13 @@ a{color:inherit}
 pre.bib{background:var(--card); border:1px solid var(--rule-2); border-radius:12px; padding:20px; overflow:auto;
   font-family:var(--mono); font-size:12.5px; line-height:1.7; color:var(--ink); margin:0}
 pre.bib .key{color:var(--grnd)} pre.bib .str{color:var(--reas)}
-.foot-meta{display:flex; justify-content:space-between; align-items:center; gap:18px; margin-top:44px;
+.foot-meta{display:flex; justify-content:space-between; align-items:flex-end; gap:18px; margin-top:44px;
   padding-top:26px; border-top:1px solid var(--rule-2); flex-wrap:wrap; font-family:var(--mono); font-size:12.5px; color:var(--muted)}
+.foot-cred{display:flex; flex-direction:column; gap:5px}
+.foot-cred .authors{font-family:var(--body); font-size:15px; margin:0}
 .foot-meta a{color:var(--muted); text-decoration:none; transition:color .15s}
+.foot-meta .authors a{color:var(--ink); text-decoration:underline; text-decoration-color:var(--rule-2); text-underline-offset:3px}
+.foot-meta .authors a:hover{color:var(--perc); text-decoration-color:var(--perc)}
 .foot-meta a:hover{color:var(--ink)}
 .foot-links{display:flex; gap:20px; flex-wrap:wrap}
 
@@ -225,6 +233,11 @@ table.rt{border-collapse:collapse; width:100%; min-width:820px; font-family:var(
       <p class="eyebrow">Diagnostic Study &middot; vision-language models</p>
       <h1 class="h1">ChartProbe</h1>
       <div class="skills-line">Perception<b>/</b>Grounding<b>/</b>Simple Reasoning</div>
+      <p class="authors">
+        <a href="https://scholar.google.com/citations?user=S38mPTgAAAAJ" target="_blank" rel="noopener noreferrer">Mahsa Khoshnoodi</a>,
+        <a href="https://scholar.google.com/citations?user=zjlFcrEAAAAJ" target="_blank" rel="noopener noreferrer">Sarah Adel Bargal</a>
+      </p>
+      <p class="affil">Georgetown University &middot; GUCV Lab</p>
       <p class="lede">When a model gets a chart question wrong, <span class="k">which skill failed?</span> ChartProbe decomposes one hard question into simple, skill-targeted probes with exact, computed answers, so a failure points at a cause.</p>
       <div class="cta">
         <a class="btn btn-solid" href="https://arxiv.org/abs/2608.13766" target="_blank" rel="noopener noreferrer">Read the paper</a>
@@ -427,7 +440,13 @@ table.rt{border-collapse:collapse; width:100%; min-width:820px; font-family:var(
   <span class="key">url</span>           = {<span class="str">https://arxiv.org/abs/2608.13766</span>}
 }</pre>
     <div class="foot-meta">
-      <span>Georgetown University &middot; GUCV Lab</span>
+      <div class="foot-cred">
+        <span class="authors">
+          <a href="https://scholar.google.com/citations?user=S38mPTgAAAAJ" target="_blank" rel="noopener noreferrer">Mahsa Khoshnoodi</a>,
+          <a href="https://scholar.google.com/citations?user=zjlFcrEAAAAJ" target="_blank" rel="noopener noreferrer">Sarah Adel Bargal</a>
+        </span>
+        <span>Georgetown University &middot; GUCV Lab</span>
+      </div>
       <div class="foot-links">
         <a href="https://arxiv.org/abs/2608.13766" target="_blank" rel="noopener noreferrer">arXiv</a><a href="#">Code</a><a href="#">Data</a>
       </div>
