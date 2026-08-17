@@ -16,7 +16,7 @@
   --grnd:#D98A62; --grnd-f:#FBE8DC;
   --reas:#4FA98A; --reas-f:#E0F1EA;
   --hero:#DFEEF4; --result:#E4F1EB; --foot:#E2EEF3;
-  --author:#00008B;
+  --author:#000045;
   --disp:'Bricolage Grotesque',system-ui,sans-serif;
   --body:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
   --mono:'Spline Sans Mono',ui-monospace,monospace;
@@ -61,16 +61,16 @@ a{color:inherit}
   line-height:.86; letter-spacing:-.03em; margin:16px 0 12px}
 .skills-line{font-family:var(--disp); font-weight:600; font-size:clamp(16px,2.3vw,22px); margin:4px 0 24px; letter-spacing:-.01em}
 .skills-line b{color:var(--grnd); font-weight:700; padding:0 10px}
-.authors{font-size:17px; margin:0 0 6px; color:#00008B; text-align:left}
+.authors{font-size:17px; margin:0 0 6px; color:var(--author); text-align:left}
 .authors a,
 .authors a:link,
 .authors a:visited,
 .authors a:hover,
 .authors a:focus-visible,
 .authors a:active{
-  color:#00008B !important;
+  color:var(--author) !important;
   text-decoration:underline;
-  text-decoration-color:#00008B;
+  text-decoration-color:var(--author);
   text-underline-offset:3px;
   font-weight:600;
 }
@@ -198,9 +198,9 @@ pre.bib .key{color:var(--grnd)} pre.bib .str{color:var(--reas)}
 .foot-meta .authors a:hover,
 .foot-meta .authors a:focus-visible,
 .foot-meta .authors a:active{
-  color:#00008B !important;
+  color:var(--author) !important;
   text-decoration:underline;
-  text-decoration-color:#00008B;
+  text-decoration-color:var(--author);
   text-underline-offset:3px;
   font-weight:600;
 }
