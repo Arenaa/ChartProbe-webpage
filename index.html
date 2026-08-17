@@ -62,8 +62,18 @@ a{color:inherit}
 .skills-line{font-family:var(--disp); font-weight:600; font-size:clamp(16px,2.3vw,22px); margin:4px 0 24px; letter-spacing:-.01em}
 .skills-line b{color:var(--grnd); font-weight:700; padding:0 10px}
 .authors{font-size:17px; margin:0 0 6px; color:#00008B; text-align:left}
-.authors a{color:#00008B !important; text-decoration:underline; text-decoration-color:#00008B; text-underline-offset:3px; font-weight:600; transition:color .15s, text-decoration-color .15s}
-.authors a:hover{color:var(--perc) !important; text-decoration-color:var(--perc)}
+.authors a,
+.authors a:link,
+.authors a:visited,
+.authors a:hover,
+.authors a:focus-visible,
+.authors a:active{
+  color:#00008B !important;
+  text-decoration:underline;
+  text-decoration-color:#00008B;
+  text-underline-offset:3px;
+  font-weight:600;
+}
 .affil{font-size:14.5px; color:var(--muted); margin:0 0 24px}
 .lede{font-size:19px; max-width:34em; margin:0 0 30px; color:var(--muted)}
 .lede .k{color:var(--ink); font-weight:600; text-decoration:underline; text-decoration-color:var(--grnd); text-underline-offset:4px}
@@ -182,8 +192,18 @@ pre.bib .key{color:var(--grnd)} pre.bib .str{color:var(--reas)}
 .foot-cred{display:flex; flex-direction:column; gap:5px}
 .foot-cred .authors{font-family:var(--body); font-size:15px; margin:0}
 .foot-meta a{color:var(--muted); text-decoration:none; transition:color .15s}
-.foot-meta .authors a{color:#00008B !important; text-decoration:underline; text-decoration-color:#00008B; text-underline-offset:3px; font-weight:600}
-.foot-meta .authors a:hover{color:var(--perc); text-decoration-color:var(--perc)}
+.foot-meta .authors a,
+.foot-meta .authors a:link,
+.foot-meta .authors a:visited,
+.foot-meta .authors a:hover,
+.foot-meta .authors a:focus-visible,
+.foot-meta .authors a:active{
+  color:#00008B !important;
+  text-decoration:underline;
+  text-decoration-color:#00008B;
+  text-underline-offset:3px;
+  font-weight:600;
+}
 .foot-meta a:hover{color:var(--ink)}
 .foot-links{display:flex; gap:20px; flex-wrap:wrap}
 
